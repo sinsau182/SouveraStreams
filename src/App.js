@@ -58,7 +58,11 @@ function App() {
 
   return (
     <>
-        {!isLoading && <Loader><div className="spinner"></div></Loader>}
+    {!isLoading && <Loader>
+      <div className="spinner"></div>
+      </Loader>
+      }
+
     <AppStyled bg={bg} className="App">
       <ThemeProvider theme={theme ? darkTheme : lightTheme}>
         <Navbar onMenuButtonClick={toggleMenu} MenuCheck={isMenuVisible}/>
@@ -83,6 +87,7 @@ function App() {
         </Container>
       </ThemeProvider>
     </AppStyled>
+
     </>
   );
 }
