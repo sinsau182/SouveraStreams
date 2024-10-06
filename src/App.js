@@ -59,11 +59,11 @@ function App() {
   return (
     <>
     
-    {isLoading && <Loader>
+    {!isLoading && <Loader>
       <div className="spinner"></div>
       </Loader>
     }
-    
+
 
     <AppStyled bg={bg} className="App">
       <ThemeProvider theme={theme ? darkTheme : lightTheme}>
