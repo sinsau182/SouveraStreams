@@ -59,7 +59,7 @@ function App() {
   return (
     <>
     
-    {!isLoading && <Loader>
+    {isLoading && <Loader>
       <div className="spinner"></div>
       </Loader>
     }
