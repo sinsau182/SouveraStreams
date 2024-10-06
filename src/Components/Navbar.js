@@ -7,6 +7,7 @@ import { useSelector } from 'react-redux';
 
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import SvgComponent from './Logo';
 
 const NavbarStyled = styled.nav`
   display: flex;
@@ -157,7 +158,12 @@ export default function Navbar({ onMenuButtonClick, MenuCheck }) {
       </MenuButton>
       <Logo onClick={() => sessionStorage.setItem('category', "random")}>
         <NavLink href="/">
-          <LogoImg src={logo} />
+        <SvgComponent
+  style={{
+    width: '250px', 
+    height: '45px',
+  }} 
+/>
         </NavLink>
       </Logo>
 

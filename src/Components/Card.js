@@ -241,7 +241,7 @@ export default function Card({ type, video, handleRemoveBookmark, isBookmarked})
           
             <Button  onClick={handleForm}>
                 <MiniMsg>For Support</MiniMsg>
-                <Ask>Ask AboveAll</Ask>
+                <Ask>Ask Søuverá</Ask>
             </Button>
 
             {type === "bm" ? (
