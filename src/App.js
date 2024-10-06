@@ -64,7 +64,6 @@ function App() {
       </Loader>
     }
 
-
     <AppStyled bg={bg} className="App">
       <ThemeProvider theme={theme ? darkTheme : lightTheme}>
         <Navbar onMenuButtonClick={toggleMenu} MenuCheck={isMenuVisible}/>
