@@ -135,7 +135,8 @@ export default function SignIn() {
       <Wrapper>
         <Title> SignIn </Title>
         <Button onClick={signInWithGoogle}> SignIn with Google </Button>
-        <SubTitle> Welcome back to Dawdle ! </SubTitle>
+        
+        <SubTitle> Welcome back to Souvera Streams ! </SubTitle>
 
         <Input placeholder="Email" onChange={e=>setEmail(e.target.value)}/>
         <Input type="password" placeholder="Password" onChange={e=>setPassword(e.target.value)}/>
@@ -149,7 +150,7 @@ export default function SignIn() {
 
       </Wrapper>
       <More>
-          Dawdle (IND)
+          Souvera (IND)
         <Links>Help</Links>
         <Links>Privacy</Links>
         <Links>Terms</Links>
