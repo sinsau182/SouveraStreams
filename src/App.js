@@ -52,6 +52,10 @@ function App() {
     }
   };
 
+  const handleClick = () => {
+    setMenuVisible(false);
+  };
+
   window.addEventListener('resize', () => {
     setMenuVisible(window.innerWidth > 768);
   });
@@ -69,7 +73,7 @@ function App() {
         <Navbar onMenuButtonClick={toggleMenu} MenuCheck={isMenuVisible}/>
         <Container>
         {isMenuVisible && <Menu theme={theme} setTheme={setTheme} />}
-          <Main isMenuVisible={isMenuVisible}>
+          <Main isMenuVisible={isMenuVisible} onClick={handleClick}>
             <Wrapper>
               <Routes>
                 <Route path="/">

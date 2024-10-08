@@ -34,6 +34,7 @@ const Title = styled.div`
 const SubTitle = styled.div`
     font-size: 18px;
     font-weight: 300;
+    text-align: center;
 `;
 
 const Input = styled.input`
@@ -135,8 +136,8 @@ export default function SignIn() {
       <Wrapper>
         <Title> SignIn </Title>
         <Button onClick={signInWithGoogle}> SignIn with Google </Button>
-        
-        <SubTitle> Welcome back to Souvera Streams ! </SubTitle>
+
+        <SubTitle> Welcome back to Souvera <br />Streams ! </SubTitle>
 
         <Input placeholder="Email" onChange={e=>setEmail(e.target.value)}/>
         <Input type="password" placeholder="Password" onChange={e=>setPassword(e.target.value)}/>
