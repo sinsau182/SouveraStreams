@@ -62,7 +62,7 @@ function App() {
 
   return (
     <>
-    
+
     {!isLoading && <Loader>
       <div className="spinner"></div>
       </Loader>
@@ -71,7 +71,7 @@ function App() {
       <ThemeProvider theme={theme ? darkTheme : lightTheme}>
         <Navbar onMenuButtonClick={toggleMenu} MenuCheck={isMenuVisible}/>
         <Container>
-        {isMenuVisible && <Menu theme={theme} setTheme={setTheme} />}
+        {isMenuVisible && <Menu theme={theme} setTheme={setTheme} onMenuButtonClick={toggleMenu} />}
           <Main isMenuVisible={isMenuVisible} onClick={handleClick}>
             <Wrapper>
               <Routes>

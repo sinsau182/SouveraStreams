@@ -72,7 +72,7 @@ const User = styled.div`
 `;
 
 
-    const Menu = ({theme, setTheme}) => {
+    const Menu = ({theme, setTheme, onMenuButtonClick }) => {
         const baseUrl = process.env.REACT_APP_BASE_URL;
         const navigate = useNavigate();
         const [categories, setCategories] = useState([]);
@@ -124,7 +124,9 @@ const User = styled.div`
                     <Login>
                         Sign In to Bookmark your videos !
                         <Link to="/signin" style={{ textDecoration: "none" }}>
-                            <Button><AccountCircleOutlinedIcon />Sign in</Button>
+                            <Button onClick={onMenuButtonClick}> 
+                                <AccountCircleOutlinedIcon/>Sign In 
+                                </Button>
                         </Link>
                     </Login>
                 )}
