@@ -130,13 +130,12 @@ const User = styled.div`
                         </Link>
                     </Login>
                 )}
-
                 <Hr />
 
                 {/* <Items onClick={() => setTheme(!theme)}>
                     <BrightnessMediumIcon /> Theme
                 </Items> */}
-
+                
             </Wrapper>
         </Container>
     );
