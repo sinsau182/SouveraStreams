@@ -53,8 +53,9 @@ function App() {
   };
 
   const handleClick = () => {
-    if (window.innerWidth <= 768)
+    if (window.innerWidth <= 768) {
     setMenuVisible(false);
+    }
   };
 
   window.addEventListener('resize', () => {
