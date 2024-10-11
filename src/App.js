@@ -53,6 +53,7 @@ function App() {
   };
 
   const handleClick = () => {
+    if (window.innerWidth <= 768)
     setMenuVisible(false);
   };
 
