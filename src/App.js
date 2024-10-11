@@ -64,7 +64,6 @@ function App() {
 
   return (
     <>
-
     {!isLoading && <Loader>
       <div className="spinner"></div>
       </Loader>
